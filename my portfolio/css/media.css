@@ -1,0 +1,83 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) { 
+    
+    body {background-color: #FFF}
+    
+    .container {padding: 0}
+    
+    aside {
+        display: none;
+        left: 0;
+        padding-top: 0
+    }
+    
+    .content {width: 100%}
+    
+    .content .carousel .overlay {padding: 150px 10px}
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
+    
+    body {background-color: #FFF}
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin-right: 0 !important;
+        margin-left: 0 !important
+    }
+    
+    aside {
+        display: none;
+        left: 0;
+        padding-top: 0
+    }
+    .content {width: 100%}
+    
+    .content .carousel .overlay {padding: 150px 10px}    
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 992px) {
+    
+    body {background-color: #FFF}
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin-right: 0 !important;
+        margin-left: 0 !important
+    }
+    
+    aside {
+        display: none;
+        left: 0;
+        padding-top: 0
+    }
+    .content {width: 100%}
+    .content .carousel .overlay {padding: 150px 10px}
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1200px) { 
+    
+    body {background-color: #FFF}
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin-right: 0 !important;
+        margin-left: 0 !important
+    }
+    
+    aside {
+        display: none;
+        left: 0;
+        padding-top: 0
+    }
+    
+    .content {width: 100%}
+    
+    .content .carousel .overlay {padding: 150px 10px}
+}

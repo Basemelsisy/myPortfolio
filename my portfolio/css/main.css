@@ -1,0 +1,338 @@
+/*Start global*/
+body {
+    background-color: black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+h1,h2,h3,h4,h5 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Acme', sans-serif;
+}
+p,span,li {
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*End global*/
+
+/*Start aside*/
+aside {
+    width: 270px;
+    float: left;
+    color: #FFF;
+    padding: 30px;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+}
+
+aside .head img {
+    max-width: 70%;
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+    border-radius: 50%;
+}
+
+aside .head span {color:#777676}
+
+aside .social-icons i{
+    margin: 20px 6px;
+    margin-bottom: 0;
+    color: #FFF
+}
+
+aside .social-icons a{text-decoration:none}
+
+aside .links ul li {
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #DDD;
+    text-transform: uppercase;
+    position: relative;
+}
+
+aside .links ul li a{
+    text-decoration: none;
+    color: #bebebe;
+    -webkit-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out
+}
+
+aside .links ul li a:hover{color: #FFF}
+
+/*End aside*/
+
+/*Start Content*/
+.content {
+    width: 840px;
+    float: right;
+    background-color: #FFF;
+}
+/*End Content*/
+
+/*Start Slider*/
+.content .carousel .overlay {
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    padding: 300px 100px;
+    color: #FFF;
+}
+.content .carousel .overlay h1 {
+    margin: auto;
+    position: relative
+}
+
+.content .carousel .overlay h1::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -4px;
+    left: -9px;
+    border-top: 3px solid #FFF;
+    border-left: 3px solid #FFF;
+}
+
+.content .carousel .overlay h1::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -4px;
+    right: -9px;
+    border-bottom: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+}
+
+.content .carousel img {
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden
+}
+/*End carousel*/
+
+/*Start about me*/
+.about-me {padding: 30px 20px 0px }
+
+.about-me h4 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.about-me ul li {
+    padding: 15px;
+    border-bottom: 2px dotted #DDD
+}
+
+.about-me p {padding: 15px}
+/*End about me*/
+
+/*Start Skills*/
+.skills .skill {margin-bottom: 40px}
+/*End Skills*/
+
+/*Start facts*/
+.facts {
+    background: url('../imgs/facts-img.jpg') center center no-repeat fixed;
+    min-height: 100px;
+    padding: 30px 20px 0px;
+    color: #FFF
+}
+
+.facts h4 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.facts .fact {
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: background-color .4s ease-in-out
+}
+
+.facts .fact:hover {
+    background-color: rgba(0,0,0,.7);
+    border-bottom: 4px solid #DDD
+}
+
+.facts .fact p{
+    font-size: 25px;
+    margin-bottom: 0rem
+}
+
+.facts .fact span{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0rem
+}
+/*End facts*/
+
+/*Start EDUCATION / EXPERIENCE*/
+.education {
+    background-color: #FFF;
+    padding: 30px 20px 0px;
+    border-bottom: 1px solid #DDD
+}
+
+.education h4 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px
+}
+
+.education .exp {
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 20px #d0cbcb82,
+        -5px -5px 20px #d0cbcb82;
+;
+}
+/*End EDUCATION / EXPERIENCE*/
+
+/*Start portfolio*/
+.portfolio {
+    background-color: #FFF;
+    padding: 30px 20px 0px;
+    border-bottom: 1px solid #DDD
+}
+
+.portfolio h4 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.portfolio ul {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.portfolio .items figure.item {
+    overflow: hidden;
+    margin-bottom: 50px;
+    position: relative;
+    max-height: 236px;
+    border: 2px solid #EEE;
+    box-shadow: 5px 5px 20px #d0cbcb82,
+        -5px -5px 20px #d0cbcb82;
+}
+.portfolio .items figcaption {
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height:100%;
+    transform: scale(0);
+    transition: all .3s ease-in-out
+}
+.portfolio .items figcaption .details {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.portfolio .items figcaption .details h4 {margin-bottom:20px}
+.portfolio .items .item img {
+    max-width: 100%;
+    transition: all .3s ease-in-out
+}
+
+.portfolio .items .item:hover img {
+    transform: scale(1.1)
+}
+
+.portfolio .items .item:hover figcaption {
+    transform: scale(1)
+    }
+/*End portfolio*/
+
+/*Start testimonials*/
+.testimonials {
+    background-color: #FFF;
+    padding: 30px 20px;
+    border-bottom: 1px solid #DDD
+}
+
+.testimonials h4 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.testimonials .carousel {
+    padding-bottom: 60px
+}
+
+.testimonials .carousel-item {margin-top: 30px}
+
+.testimonials .carousel-item img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonials .carousel-indicators {bottom: 0}
+
+.testimonials .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid black
+}
+
+.testimonials .carousel-indicators li.active {background-color: black}
+/*End testimonials*/
+
+/*Start contact us*/
+.contact-us {
+    padding: 30px 20px;
+    background-color: #FFF;
+}
+
+.contact-us h4 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.contact-us form {margin-top: 30px}
+
+.contact-us input, form-control, textarea {
+    border: none !important;
+    border-bottom: 1px solid #DDD !important; 
+    outline: none;
+    border-radius: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    resize: none;
+    margin-bottom: 15px
+}
+
+.contact-us textarea {height: 200px}
+
+.contact-us input[type="submit"] {
+    background-color: #333;
+    color: #FFF;
+    padding: 5px 10px;
+    cursor: pointer
+}
+/*End contact us*/
